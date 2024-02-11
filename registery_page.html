@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registry Page</title>
+</head>
+<body style="background-color: grey;">
+    <fieldset style="border: 1px black solid">
+        <legend>Log in information</legend> 
+        <div>
+            <label for="username"> Username:&nbsp;&nbsp;</label>
+            <input type="text" name="username" id="username" placeholder="username" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password: &nbsp;&nbsp;</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+    </fieldset>
+
+    <fieldset style="border: 1px black solid">
+        <legend>Personal Information</legend>
+        <div>
+            <label for="position">Position:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select name="position" id="position">
+                <option value="Student">Student </option>
+                <option label="Teacher" value="Teacher"></option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <br>
+        <div>
+            <label for="picture">Picture:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="file" name="file" id="picture">
+        </div>
+        <br>
+        <div>
+            <label for="date">Birthdate:&nbsp;&nbsp;&nbsp;</label>
+            <input type="date" name="date" id="date" min="2002-07-10">
+        </div>
+        <br>
+    </fieldset>
+    <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </div>
+    <br>
+    <br>
+    <p>To head back home click <a href="index.html">here</a></p>
+
+</body>
+</html>
